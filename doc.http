@@ -10,7 +10,7 @@ Content-Type:application/json
 }
 
 ### test registrATION
-POST http://127.0.0.1:8000/dj-rest-auth/registration/
+GET http://127.0.0.1:8000/dj-rest-auth/registration/
 Content-Type:application/json
 
 {
@@ -19,3 +19,9 @@ Content-Type:application/json
     "password1":"somerandompassword123",
     "password2":"somerandompassword123"
 }
+
+###test fetch post list
+
+GET http://127.0.0.1:8000/api/posts/
+Content-Type:application/json
+
