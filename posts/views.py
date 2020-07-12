@@ -32,3 +32,7 @@ class PostUpdateView(generics.UpdateAPIView):
     lookup_field='slug'
      
 
+class PostDeleteView(generics.DestroyAPIView):
+    permission_classes = [permissions.AllowAny]
+    queryset = Post.objects.all()
+    lookup_field='slug'
